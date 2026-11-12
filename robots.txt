@@ -1,0 +1,11 @@
+# robots.txt for PrimeNet Solutions FZC
+# https://primenetsolutions.ae
+
+User-agent: *
+Allow: /
+
+# Nothing on this site is private. Add paths here only if you create
+# an admin area or staging folder later, e.g.:
+# Disallow: /admin/
+
+Sitemap: https://primenetsolutions.ae/sitemap.xml

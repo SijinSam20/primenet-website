@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Only real, crawlable pages belong in a sitemap.
+  This is a single-page site, so there is exactly one entry.
+  Section anchors (#about, #services, ...) are NOT separate pages
+  and must not be listed — search engines ignore them.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.primenetsolutions.ae/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.primenetsolutions.ae/asset/og-cover.jpg</image:loc>
+      <image:title>PrimeNet Solutions FZC — Sharjah-based enterprise IT integrator</image:title>
+      <image:caption>Enterprise networking, SIRA-compliant security, biometrics, servers and IT maintenance contracts across the UAE.</image:caption>
+    </image:image>
+  </url>
+</urlset>
