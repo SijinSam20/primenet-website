@@ -546,15 +546,17 @@
       position: absolute;
       top: 0;
       bottom: 0;
-      width: 42%;
+      left: 0;
+      width: 100%;
       border-radius: 999px;
       background: linear-gradient(90deg, #06b6d4, #38bdf8, #8b5cf6);
       box-shadow: 0 0 14px rgba(6, 182, 212, 0.55);
-      animation: plSweep 1.15s ease-in-out infinite;
+      transform-origin: left center;
+      animation: plFill 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
-    @keyframes plSweep {
-      0% { transform: translateX(-110%); }
-      100% { transform: translateX(280%); }
+    @keyframes plFill {
+      0% { transform: scaleX(0.02); }
+      100% { transform: scaleX(1); }
     }
     @media (prefers-reduced-motion: reduce) {
       .pl-logo, .pl-bar { animation: none; }
@@ -818,7 +820,7 @@
       var el = document.getElementById('preloader');
       if (!el) return;
       var start = performance.now();
-      var MIN_VISIBLE = 380;   // avoids a jarring flash on fast loads
+      var MIN_VISIBLE = 2000;  // show the loading screen for 2 seconds
       var MAX_VISIBLE = 4000;  // never trap the visitor if an asset stalls
       var done = false;
 
